@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Form</title>
+</head>
+<body>
+    <h2>Registration Form</h2>
+    <form action="register.php" method="POST">
+        <label for="name">Name:</label><br>
+        <input type="text" id="name" name="name"  placeholder="enter your name"><br><br>
+        
+        <label for="email">Email:</label><br>
+        <input type="email" id="email" name="email" placeholder="enter your email"><br><br>
+        
+        <label for="password">Password:</label><br>
+        <input type="password" id="password" name="password" placeholder="enter your password"><br><br>
+        
+        <label for="confirm_password">Confirm Password:</label><br>
+        <input type="password" id="confirm_password" name="confirm_password" enter your confirm password required><br><br>
+        
+        <label for="role">Role:</label><br>
+        <select id="role" name="role" required>
+            <option value="users">users</option>
+            <option value="sellers">seller</option>
+        </select><br><br>
+        
+        <input type="submit" value="Register">
+    </form>
+</body>
+</html>

@@ -1,0 +1,94 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    max-width: 1200px; /* Limit the width of the container */
+    margin: 0 auto; /* Center the container */
+    padding: 20px; /* Padding around the container */
+}
+
+.header {
+    display: flex;
+    justify-content: space-between; /* Space between title and logout */
+    align-items: center; /* Center vertically */
+    background-color: #007bff; /* Blue background */
+    color: white; /* White text color */
+    padding: 15px; /* Padding inside header */
+    border-radius: 8px; /* Rounded corners */
+}
+
+.header h1 {
+    margin: 0; /* Remove default margin */
+    font-size: 24px; /* Font size for title */
+}
+
+.header .logout a {
+    color: white; /* White text for logout link */
+    text-decoration: none; /* No underline */
+    font-weight: bold; /* Bold text */
+    transition: color 0.3s; /* Smooth color transition */
+}
+
+.header .logout a:hover {
+    color: #e74c3c; /* Red color on hover */
+}
+
+.main-content {
+    margin-top: 20px; /* Space above main content */
+    background: white; /* White background for main content */
+    padding: 20px; /* Padding inside main content */
+    border-radius: 8px; /* Rounded corners */
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+}
+
+h2 {
+    color: #333; /* Dark color for headings */
+    margin-bottom: 15px; /* Space below heading */
+}
+
+.card-container {
+    display: flex;
+    flex-wrap: wrap; /* Allow wrapping for cards */
+    gap: 20px; /* Space between cards */
+}
+
+.card {
+    flex: 1 1 calc(30% - 20px); /* Responsive card width */
+    background: #ffffff; /* White background for cards */
+    border: 1px solid #ccc; /* Light border */
+    border-radius: 8px; /* Rounded corners */
+    padding: 20px; /* Padding inside cards */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Shadow for cards */
+    transition: box-shadow 0.3s; /* Smooth shadow transition */
+}
+
+.card:hover {
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Darker shadow on hover */
+}
+
+.card h3 {
+    color: #007bff; /* Blue color for card titles */
+    margin-top: 0; /* Remove default margin */
+}
+
+.card p {
+    color: #555; /* Darker gray for paragraph text */
+}
+
+.btn {
+    display: inline-block; /* Inline block for button */
+    padding: 10px 15px; /* Padding inside button */
+    background-color: #007bff; /* Blue background */
+    color: white; /* White text */
+    text-decoration: none; /* No underline */
+    border-radius: 4px; /* Rounded corners */
+    transition: background-color 0.3s; /* Smooth background color transition */
+}
+
+.btn:hover {
+    background-color: #0056b3; /* Darker blue on hover */
+}

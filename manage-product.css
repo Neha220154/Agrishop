@@ -1,0 +1,125 @@
+/* General Body Styles */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+}
+
+/* Container for the Form */
+.container {
+    width: 70%; /* Wider for better presentation */
+    margin: auto;
+    background: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    margin-top: 50px;
+}
+
+/* Heading Styles */
+h2 {
+    text-align: center;
+    color: #333;
+    margin-bottom: 20px; /* Spacing below the heading */
+}
+
+/* Table Styles */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+th, td {
+    padding: 10px;
+    border: 1px solid #ddd;
+    text-align: left;
+}
+
+th {
+    background-color: #4CAF50; /* Header background color */
+    color: white; /* Header text color */
+}
+
+/* Button Styles */
+input[type="submit"] {
+    background-color: #4CAF50; /* Button background color */
+    color: white; /* Button text color */
+    padding: 10px 15px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease; /* Smooth hover effect */
+}
+
+/* Button Hover Effect */
+input[type="submit"]:hover {
+    background-color: #45a049; /* Darker shade on hover */
+}
+
+/* Message Styles */
+.message {
+    color: #d9534f; /* Bootstrap danger color */
+    font-weight: bold;
+    text-align: center;
+    margin: 10px 0;
+}
+
+/* Image Styles */
+img {
+    max-width: 100px; /* Limit image width */
+    height: auto; /* Keep aspect ratio */
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .container {
+        width: 90%; /* Slightly narrower on mobile */
+    }
+
+    table {
+        font-size: 14px; /* Slightly smaller font */
+    }
+
+    th, td {
+        padding: 8px; /* Less padding */
+    }
+
+    input[type="submit"] {
+        width: 100%; /* Full-width buttons on mobile */
+    }
+}
+
+/* Form Styles */
+form {
+    margin-top: 20px; /* Space above the form */
+}
+
+form label {
+    display: block; /* Block display for labels */
+    margin-top: 10px; /* Space above labels */
+}
+
+form input[type="text"],
+form input[type="number"],
+form textarea,
+form input[type="file"] {
+    width: 100%; /* Full width inputs */
+    padding: 10px; /* Padding inside inputs */
+    margin-top: 5px; /* Space above inputs */
+    border: 1px solid #ccc; /* Border for inputs */
+    border-radius: 4px; /* Rounded corners */
+    box-sizing: border-box; /* Include padding in width */
+}
+
+/* Textarea Styles */
+form textarea {
+    resize: vertical; /* Allow vertical resizing only */
+}
+
+/* Error Message Styles */
+.error {
+    color: #d9534f; /* Error text color */
+    font-size: 14px; /* Font size for error messages */
+}
