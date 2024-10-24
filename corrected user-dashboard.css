@@ -1,0 +1,121 @@
+/* Reset some basic styles */
+body, h1, h2, p, ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+/* Body styling */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+/* Container styling */
+.container {
+    display: flex; /* Allows header and main content to sit side by side */
+    flex-direction: column; /* Stack header and main content */
+}
+
+/* Header styling */
+.header {
+    background: #35424a;
+    color: #ffffff;
+    padding: 20px;
+    text-align: center;
+}
+
+/* Header links styling */
+.header ul {
+    padding: 0;
+    margin-top: 10px; /* Space from the main header */
+}
+
+.header ul li {
+    display: inline; /* Display links inline */
+    margin: 0 15px; /* Space between links */
+}
+
+.header ul li a {
+    color: #ffffff;
+    text-decoration: none;
+}
+
+/* Logout button styling */
+.logout {
+    margin-top: 15px; /* Space above the logout button */
+}
+
+.logout a {
+    background: #e74c3c; /* Red background */
+    color: #ffffff;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: background 0.3s, transform 0.2s; /* Add transition for effects */
+}
+
+.logout a:hover {
+    background: #c0392b; /* Darker red on hover */
+    transform: scale(1.05); /* Slightly enlarge on hover */
+}
+
+/* Main content styling */
+.main-content {
+    flex: 1; /* Takes remaining space */
+    padding: 20px;
+    background: #ffffff;
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Center content horizontally */
+    text-align: center;  /* Center text */
+}
+
+/* Card container */
+.card-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center; /* Center cards */
+    gap: 15px; /* Space between cards */
+}
+
+/* Card styling */
+.card {
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 10px;
+    text-align: center;
+    background: #fff;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    flex: 1 1 calc(20% - 30px); /* Reduce size of the product cards */
+    max-width: 280px; /* Limit maximum width of cards */
+}
+
+.card img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* Farm image styling */
+.farm-image {
+    max-width: 100%;
+    height: auto;
+    margin-top: 10px; /* Space between product image and farm image */
+    border-radius: 5px; /* Optional: for rounded corners */
+}
+
+/* Button styling */
+.btn {
+    background: #35424a;
+    color: #ffffff;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.btn:hover {
+    background: #1d262c;
+}
